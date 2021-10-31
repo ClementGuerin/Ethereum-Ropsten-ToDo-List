@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="orphevs">
+    <title>Ethereum Ropsten To-Do List</title>
+    <link href="./assets//css/style.css" rel="stylesheet">
+    <script src="./assets/js/web3.min.js"></script>
+    <script src="./assets/js/moralis.js"></script>
+</head>
+<body>    
+
+    <div class="header">
+        <div class="header-logo">
+            Ethereum Roptsen To-Do List
+        </div>
+        <div class="header-infos">
+            <button id="btn-login" class="not-connected">Login</button>
+            <span id="header-address" class="connected"></span>
+            <button id="btn-logout" class="connected">Logout</button>
+        </div>
+    </div>
+    <div id="no-metamask">
+        This dApp require a crypto wallet, please install <a href="https://metamask.io/" target="_blank">MetaMask 🦊</a>.
+    </div>
+    <div class="container">
+        <div class="alert info">
+            If you need ETH Ropsten click here : <a href="https://faucet.ropsten.be/" target="_blank">Ropsten Faucet</a>
+        </div>
+        <div class="add-list connected">
+            <input type="text" id="message" placeholder="Insert your message...">
+            <button id="btn-addlist">Add to to-do list</button>
+        </div>
+        <div class="add-list not-connected">
+            <input type="text" disabled placeholder="You must be logged in to add a message.">
+            <button disabled style="cursor: not-allowed;">Add to to-do list</button>
+        </div>
+        <ul class="list">
+            <div id="insert-list-here"></div>
+        </ul>
+        <div class="sc">
+            Ethereum Ropsten Smart Contract : <a href="https://ropsten.etherscan.io/address/0xc526beD2f546e061c2B504FB86eE2c7885E0bb01" target="_blank">0xc526beD2f546e061c2B504FB86eE2c7885E0bb01</a>
+        </div>
+        <div class="copyright">
+            <a href="https://twitter.com/Orphevs" target="_blank">@Orphevs</a>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./assets/js/main.js"></script>
+</body>
+</html>
